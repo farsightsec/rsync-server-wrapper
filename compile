@@ -1,0 +1,2 @@
+#!/bin/sh -x
+exec diet gcc -Os -std=gnu99 -nostdinc -o rsync-server-wrapper rsync-server-wrapper.c
