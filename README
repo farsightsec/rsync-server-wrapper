@@ -3,7 +3,7 @@ rsync-server-wrapper: minimal privilege "rsync --server" chroot wrapper
 
 This is rsync-server-wrapper, a wrapper for the rsync command that can be
 used as a shell for minimum privilege rsync-over-ssh users. It works by
-checking that the first parameter to the rsync command is "--server".
+requiring that the first parameter to the rsync command is "--server".
 
 It requires that the ssh daemon perform the chroot. See the ChrootDirectory
 option in the sshd_config(5) man page.
